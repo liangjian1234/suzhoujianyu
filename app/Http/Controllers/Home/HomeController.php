@@ -14,8 +14,6 @@ class HomeController extends Controller
     //
     public function index(Request $request)
     {
-        dd(count(session('order_listsddd')));
-        dd(session('order_lists'));
         return view('home.index');
     }
 

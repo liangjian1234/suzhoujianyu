@@ -20,3 +20,8 @@ Route::namespace('Home')->group(function(){
     Route::get('add/{id}','HomeController@add')->name('add');
     Route::get('delete/{id}','HomeController@delete')->name('delete');
 });
+
+Route::namespace('Admin')->prefix('admin')->group(function(){
+    Route::get('/','AdminController@index');
+});
+

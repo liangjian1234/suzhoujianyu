@@ -1,4 +1,4 @@
-@extends('home._base')
+@extends('common._base')
 
 @section('base_title','首页')
 

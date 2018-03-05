@@ -15,6 +15,9 @@
                                    aria-expanded="@if($loop->first) true @else false @endif"
                                    aria-controls="collapse{{$loop->index}}">
                                     <div class="row">
+                                        <div class="col-md-1">
+                                            # {{$loop->index+1}}
+                                        </div>
                                         <div class="col-md-3">
                                             订单号：{{$order->id}}
                                         </div>
@@ -24,7 +27,7 @@
                                         <div class="col-md-3  text-right">
                                             编号：{{$order->person_id}}
                                         </div>
-                                        <div class="col-md-3 text-right">
+                                        <div class="col-md-2 text-right">
                                             姓名：{{$order->person_name}}
                                         </div>
                                     </div>
