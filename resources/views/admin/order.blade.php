@@ -1,6 +1,6 @@
 @extends('admin._main')
 
-@section('title','图书入库')
+@section('title','图书导出')
 
 @section('head')
     <link rel="stylesheet" href="{{asset('datepick/css/bootstrap-datetimepicker.min.css')}}">

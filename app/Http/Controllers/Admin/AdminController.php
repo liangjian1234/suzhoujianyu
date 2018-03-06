@@ -105,6 +105,7 @@ class AdminController extends Controller
                     ->leftJoin('book_book', 'book_book.id', '=', 'order_item.book_id')
                     ->whereDate('book_order.created_at', '>=', $s_date)
                     ->whereDate('book_order.created_at', '<=', $e_date)
+                    ->orderBy('book_order.person_id', 'asc')
                     ->orderBy('book_order.created_at', 'asc')
                     ->get();
                 if ($order_lists->isEmpty()) {
