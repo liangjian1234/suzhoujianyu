@@ -10,11 +10,19 @@
 
     <!-- Fonts -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
+
+    @section('base_head')
+    @show
+
     <link href="{{asset('css/main.css').'?version='.rand(1,111111)}}" rel="stylesheet" type="text/css">
 </head>
+
 @section('base_body')
 @show
+
 <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
+
 @section('base_js')
 @show
+
 </html>

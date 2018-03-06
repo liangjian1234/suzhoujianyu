@@ -15,9 +15,11 @@ class CreateBookExportTable extends Migration
     {
         Schema::create('book_export', function (Blueprint $table) {
             $table->increments('id');
-            $table->bigInteger('number');
-            $table->integer('order_id');
+            $table->bigInteger('number')->comment('导出excel的名称');
+            $table->date('start_date');
+            $table->date('end_date');
             $table->timestamps();
+            $table->index('number');
         });
     }
 

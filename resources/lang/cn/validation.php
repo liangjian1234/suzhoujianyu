@@ -96,5 +96,8 @@ return [
         'title' => '标题',
         'person_id' => '您的编号',
         'person_name' => '您的姓名',
+        'export_type'=>'导出方式',
+        'start_date'=>'订单开始时间',
+        'end_date'=>'订单结束时间',
     ],
 ];

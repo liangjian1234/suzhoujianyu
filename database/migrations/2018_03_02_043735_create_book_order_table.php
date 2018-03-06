@@ -17,10 +17,10 @@ class CreateBookOrderTable extends Migration
             $table->bigIncrements('id');
             $table->string('person_id',255);
             $table->string('person_name',50);
+            $table->integer('status')->comment('导出次数')->default(0);
             $table->timestamps();
             $table->index('person_id');
         });
-        DB::statement("ALTER TABLE book_order AUTO_INCREMENT = 168168168168;");
     }
 
     /**

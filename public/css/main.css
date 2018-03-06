@@ -46,6 +46,10 @@
 #admin-navbar{border-radius:0px;}
 
 /*
+ *  exprot_panel
+ */
+.exprot_panel{ padding:200px 100px}
+/*
  * 滚动条
  */
 #scroll{overflow-y: scroll;}
